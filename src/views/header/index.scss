@@ -1,0 +1,40 @@
+.header {
+  width: 100%;
+  height: 100px;
+  background: rgba(6, 30, 59, .71);
+
+  .header-center {
+    width: 100%;
+    height: 100px;
+    background: url("../../assets/images/haear-bg.png")no-repeat;
+    background-size: 100% 100%;
+    .header-center-weather{
+      width: 20%;
+      text-align: center;
+      .header-center-weather-icon{
+        font-size: 18px;
+        color: #1be7ff;
+        img{
+          vertical-align: middle;
+        }
+      }
+    }
+    .header-center-title{
+      width: 50%;
+      text-align: center;
+      color: #fff;
+      font-size: 52px;
+    }
+
+    .header-center-time{
+      font-size: 24px;
+      color: #1be7ff;
+    }
+    .header-center-time-line{
+      width: 2px;
+      height: 16px;
+      display: inline-block;
+      background: linear-gradient(to bottom, rgba(0,0,0,.1) 0%, rgba(255,255,255,.8) 50%, rgba(0,0,0,.1) 100%);
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.chargingPile-right{
+  .chargingPile-right-title{
+    background: url("../../../assets/images/title_bg.png")no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+  }
+  .chargingPile-right-radius{
+    position: relative;
+    .chargingPile-right-green{
+      color: #00ff00;
+    }
+    .chargingPile-right-color-orange{
+      color: #ffd304;
+    }
+    .chargingPile-right-icon{
+      width: 75px;
+      height: 75px;
+      text-align: center;
+      line-height: 75px;
+      border-radius: 100%;
+      border: 1px solid #00ff00;
+      background: rgba(0,129,17,.2);
+      .iconfont{
+        font-size: 40px;
+        color: #00ff00;
+      }
+    }
+    .chargingPile-right-orange{
+      width: 75px;
+      height: 75px;
+      text-align: center;
+      line-height: 75px;
+      border-radius: 100%;
+      border: 1px solid #ffd304;
+      background: rgba(255,211,4,.2);
+      .iconfont{
+        font-size: 40px;
+        color: #ffd304;
+      }
+    }
+    .chargingPile-right-ra{
+      width: 300px;
+      border-radius: 50px;
+      position: absolute;
+      left: 0px;
+      padding: 15px 0 15px 100px;
+      background: rgba(27,179,155,.1);
+    }
+  }
+}

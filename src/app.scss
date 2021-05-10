@@ -1,0 +1,285 @@
+body,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+img,
+input,
+li,
+ol,
+p,
+textarea,
+ul {
+  padding: 0;
+  margin: 0;
+  word-break: break-all;
+}
+
+body,
+html,
+ul,
+li,
+div,
+p,
+span {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+::-webkit-input-placeholder {
+  color: #fff;
+}
+
+
+/* 使用webkit内核的浏览器 */
+
+:-moz-placeholder {
+  color: #fff;
+}
+
+
+/* Firefox版本4-18 */
+
+::-moz-placeholder {
+  color: #fff;
+}
+
+
+/* Firefox版本19+ */
+
+:-ms-input-placeholder {
+  color: #fff;
+}
+
+
+/* IE浏览器 */
+
+li,
+ol,
+ul {
+  list-style: none
+}
+
+i {
+  font-style: inherit
+}
+
+html,
+body {
+  font-family: "PingFang SC", "Microsoft YaHei", "微软雅黑", Helvetica, "Helvetica Neue", "Hiragino Sans GB", Arial, sans-serif;
+  width: 100%;
+  height: 100%;
+  color: #333;
+  background: transparent;
+  overflow-x: hidden;
+  .iconfont {
+    font-size: 1em;
+  }
+}
+
+@for $i from 1 through 20 {
+  .m-#{5 * $i} {
+    margin: (5px * $i)
+  }
+  .m-l-#{5 * $i} {
+    margin-left: (5px * $i)
+  }
+  .m-r-#{5 * $i} {
+    margin-right: (5px * $i)
+  }
+  .m-t-#{5 * $i} {
+    margin-top: (5px * $i)
+  }
+  .m-b-#{5 * $i} {
+    margin-bottom: (5px * $i)
+  }
+  .p-#{5 * $i} {
+    padding: (5px * $i)
+  }
+  .p-l-#{5 * $i} {
+    padding-left: (5px * $i)
+  }
+  .p-r-#{5 * $i} {
+    padding-right: (5px * $i)
+  }
+  .p-t-#{5 * $i} {
+    padding-top: (5px * $i)
+  }
+  .p-b-#{5 * $i} {
+    padding-bottom: (5px * $i)
+  }
+  .t-i-#{5 * $i} {
+    text-indent: (5px * $i)
+  }
+}
+
+@for $i from 1 through 100 {
+  .w-#{10 * $i} {
+    width: (10px * $i) !important
+  }
+  .h-#{10 * $i} {
+    height: (10px * $i) !important
+  }
+  .f-#{1 + $i} {
+    font-size: #{1 + $i}px !important
+  }
+}
+
+.flex-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  position: relative;
+  &.r-reverse {
+    flex-direction: row-reverse
+  }
+  // 左右布局 反方向
+  &.c-reverse {
+    flex-direction: column-reverse
+  }
+  // 上下布局 反方向$peop
+  &.column {
+    flex-direction: column
+  }
+  // 居左
+  &.start {
+    justify-content: flex-start
+  }
+  // 居右
+  &.end {
+    justify-content: flex-end
+  }
+  // 居中
+  &.around {
+    justify-content: space-around
+  }
+  // 居中
+  &.center {
+    justify-content: center
+  }
+  // 居中 容器之间有空白
+  &.between {
+    justify-content: space-between
+  }
+  // 居中 容器左右有空白
+  &.evenly {
+    justify-content: space-evenly
+  }
+  // 允许换行
+  &.wrap {
+    flex-wrap: wrap
+  }
+  &.alignStart {
+    align-items: start;
+  }
+  // 超出换行
+  >.c-start {
+    align-self: start
+  }
+  // 父集align-items不生效 改为start
+  >.x-flex-a {
+    flex: auto;
+    width: 10px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch
+  }
+  >.x-auto {
+    flex: auto
+  }
+}
+
+.c-fff {
+  color: #fff;
+}
+
+.c-f3ff {
+  color: #f3ffff !important;
+}
+
+.t-c {
+  text-align: center;
+}
+
+.t-l {
+  text-align: left;
+}
+
+.t-r {
+  text-align: right;
+}
+
+.c-blue {
+  color: #34fff8;
+}
+
+.c-blue_col {
+  color: #10ebee;
+}
+
+.c-blue_cyan {
+  color: #12e4e6;
+}
+
+.c-red {
+  color: #e01717;
+}
+
+.c-pointer {
+  cursor: pointer;
+}
+
+// 滚动条自定义样式
+.el-table__body-wrapper::-webkit-scrollbar,
+.scroll::-webkit-scrollbar {
+  width: 4px;
+  /*对垂直流动条有效*/
+  height: 4px;
+  /*对水平流动条有效*/
+}
+
+
+/*定义滚动条的轨道颜色、内阴影及圆角*/
+
+.el-table__body-wrapper::-webkit-scrollbar-track,
+.scroll::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 216, 255, 0.5);
+  background-color: rgba(0, 216, 255, 0.5);
+  border-radius: 3px;
+}
+
+
+/* 设置滚动条的样式 */
+
+.scroll {
+  overflow-y: auto;
+}
+
+.main-index {
+  box-sizing: border-box;
+  width: 350px;
+  height: 960px;
+  background: rgba(8, 35, 65, .8);
+  background-image: url("./assets/images/left-top.png"), url("./assets/images/left-bottom.png"), url("./assets/images/right-top.png"), url("./assets/images/right-bottom.png");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: left top, left bottom, right top, right bottom;
+}
+
+.left-index {
+  position: absolute;
+  top: 125px;
+  left: 15px;
+}
+
+.right-index {
+  width: 480px;
+  position: absolute;
+  top: 125px;
+  right: 15px;
+}

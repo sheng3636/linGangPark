@@ -1,0 +1,40 @@
+.enterprise-right {
+  .enterprise-right-color {
+    color: #00fcff;
+  }
+
+  .enterprise-right-orange {
+    color: #ff9600;
+  }
+  .enterprise-right-blue{
+    color: #00f1f4;
+  }
+  .enterprise-right-green{
+    color: #01ff31;
+  }
+
+  .enterprise-right-ul {
+    li {
+      font-size: 16px;
+      color: #e0fffe;
+      line-height: 3;
+      border-bottom: 1px dashed rgba(255, 255, 255, .5);
+      position: relative;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+
+      &::after {
+        content: '';
+        width: 10px;
+        height: 10px;
+        background: #00c6ff;
+        position: absolute;
+        left: -15px;
+        top: 18px;
+        border-radius: 50px;
+      }
+    }
+
+
+  }
+}
